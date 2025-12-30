@@ -21,13 +21,12 @@ public class Contato {
         if (getCpf().isEmpty() || getCpf().isBlank()) {
             throw new IllegalArgumentException("CPF não pode ser  vazio");
         }
-        if (!getCpf().matches("\\d{11}"))
-        {
+        if (!getCpf().matches("\\d{11}")) {
             throw new IllegalArgumentException("CPF deve conter: 11 digitos, apenas números");
         }
 
     }
-3
+
     //validação do telefone
     public void Validartelefone(String telefone) {
         if (getTelefone().isEmpty()) {
